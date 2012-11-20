@@ -1,0 +1,563 @@
+@charset "UTF-8";
+/* CSS Document */
+/* #Reset & Basics
+================================================== */
+body{
+	padding:0px;
+	margin:0px;
+	background:url(http://primebee.com/images/bg.png);
+	}
+.head{
+	background:url(http://primebee.com/images/head.png) repeat-x;
+	height:51px;}
+.wrapper{
+	width:960px;
+	margin:auto;
+	position:relative;}
+.header{
+	margin:-60px 0 0 0;}
+.header p{
+	font-family: 'Magra', sans-serif;
+	font-weight:lighter;
+	font-size:20px;
+	color:#fff;
+	text-shadow: 1px 1px 0px #3f74c3;
+    filter: dropshadow(color=#3f74c3, offx=1, offy=1);
+
+	}
+.socialmedia{
+	float:right;
+	margin:-55px 0 0 0}
+a.login{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:12px;
+	color:#fff;
+	float:left;
+	text-decoration:none;
+	margin:15px 10px 0 0;}
+a.login:hover{
+	color:#064f90;}
+a.facebook{
+	background:url(http://primebee.com/images/facebook.png) 0 0;
+	height:50px;
+	width:49px;
+	display:block;
+	float:left;}
+a.facebook:hover{
+	background:url(http://primebee.com/images/facebook.png) 0px 50px;
+	}
+a.twitter{
+	background:url(http://primebee.com/images/twitter.png) 0 0;
+	height:50px;
+	width:49px;
+	float:left;
+	display:block;}
+a.twitter:hover{
+	background:url(http://primebee.com/images/twitter.png) 0 49px;}
+.googleplus{
+	margin:11px 0 0 5px;
+	float:left;
+	width:111px;}
+.logo{
+	background:url(http://primebee.com/images/innerlogo.png);
+	width:169px;
+	height:37px;
+	display:block;
+	margin:35px 0 0 0;}
+.mainbg{
+	background:url(http://primebee.com/images/mainbg.png);
+	width:952px;
+	height:740px;
+	display:block;
+	margin:25px 0 0 0;
+	-webkit-box-shadow: 0px 0px 5px 1px #e4e5e9;
+    box-shadow: 0px 0px 5px 1px #e4e5e9;
+	}
+.ribbon{
+	background:url(http://primebee.com/images/ribbon.png);
+	width:252px;
+	height:63px;
+	position:absolute;
+	top:85px;
+	left:-16px;
+	display:block;}
+.ribbontext{
+	font-family: 'Magra', sans-serif;
+	font-weight:lighter;
+	font-size:20px;
+	color:#fff;
+	margin:24px 0 0 50px;
+	text-shadow: 1px 1px 0px #3f74c3;
+    filter: dropshadow(color=#3f74c3, offx=1, offy=1);
+
+	}
+.leftform{
+	float:left;
+	margin:90px 0 0 20px;}
+.tableleft{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:12px;
+	color:#000;
+	text-align:right;}
+.tableright{
+	padding-left:20px;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:12px;
+	color:#000;}
+.note{
+	font-style:italic;
+	color:#03aeee;
+    }
+.smallselectbox{
+	border:1px solid #e3e3e3;
+	width:95px;
+	height:35px;
+	color:#9b9a9a;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:12px;
+	padding:10px;
+	background: url(http://primebee.com/images/dropdown.png) no-repeat right #f7f7f7;
+	display: inline-block;
+	border-radius:0px;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+    cursor:pointer;
+	}
+.registernow{
+	background:url(http://primebee.com/images/registernow.png);
+	width:386px;
+	height:57px;
+	display:block;
+	border:0px;
+	cursor:pointer;}
+.textbox{
+	background:#f7f7f7;
+	border:1px solid #e3e3e3;
+	width:269px;
+	height:28px;}
+.selectbox{
+	border:1px solid #e3e3e3;
+	width:272px;
+	height:35px;
+	color:#9b9a9a;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:12px;
+	padding:10px;
+	background: url(http://primebee.com/images/dropdown.png) no-repeat right #f7f7f7;
+	display: inline-block;
+	border-radius:0px;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+    cursor:pointer;
+	}
+.selectbox2{
+	border:1px solid #e3e3e3;
+	width:80px;
+	height:35px;
+	color:#9b9a9a;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:12px;
+	padding:10px;
+	background: url(http://primebee.com/images/dropdown.png) no-repeat right #f7f7f7;
+	display: inline-block;
+	border-radius:0px;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+    cursor:pointer;
+	}
+.signupbttn{
+	background:url(http://primebee.com/images/signup.png);
+	width:97px;
+	height:45px;
+	display:block;
+	cursor:pointer;
+	border:0px;
+	float:right;
+	margin:20px 0px 0 0;}
+.account{
+	margin-top:100px;}
+.account_heading{
+	color:#064f90;
+	font-family: 'Magra', sans-serif;
+	font-size:32px;
+	text-shadow: 1px 1px 0px #ffffff;
+filter: dropshadow(color=#ffffff, offx=1, offy=1);
+font-weight:bold;
+
+}
+.account_heading a{
+	color:#51b3ff;
+	text-decoration:none;
+}
+.verify{
+	margin:150px 0 0 40px;}	
+.rightside{
+	width:433px;
+	float:right;
+	margin-right:30px;
+	}
+.rightside h1{
+	color:#064f90;
+	font-family: 'Magra', sans-serif;
+	font-size:46px;
+	text-shadow: 1px 1px 0px #ffffff;
+filter: dropshadow(color=#ffffff, offx=1, offy=1);
+margin-bottom:10px;
+
+}
+.rightside p{
+	font-family: 'Imprima', sans-serif;
+	color:#000;
+	font-size:16px;
+	line-height:22px;}
+.rightgirl{
+	background:url(http://primebee.com/images/girl.png);
+	width:359px;
+	height:499px;
+	display:block;
+	margin:0 0 0 15px;}
+	
+.footer{
+	background:url(http://primebee.com/images/footer.png) repeat-x;
+	height:70px;
+	margin:50px 0 0 0;}
+.footerleft{
+	margin:30px 0 0 0;
+	float:left;
+	color:#fff;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:12px;}
+.footerright{
+	margin:20px 0 0 0;
+	float:right;
+	color:#fff;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:12px;
+	}
+.footerright ul{
+	list-style-type:none;}
+.footerright li{
+	float:left;
+	margin-left:5px;}
+.footerright li a{
+	color:#fff;
+	text-decoration:none;}
+.footerright li a:hover{
+	color:#e4e5e9;}
+.clear{
+	clear:both;}
+	
+/*------- Inner Page --------*/
+.innerleftside{
+	width:240px;
+	float:left;}
+.innerleftside ul{
+	padding:0px;
+	margin:0px;}
+.innerleftside li{
+	list-style:none;
+	background:url(http://primebee.com/images/innernavbg.png);
+	width:209px;
+	height:33px;
+	margin-bottom:6px;
+	padding:12px 0 0 30px;
+	}
+.innerleftside li a{
+	text-decoration:none;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:14px;
+	color:#064f90;}
+#active{
+	background:url(http://primebee.com/images/innerhover.png);
+	height:36px;
+	width:208px;
+	color:#FFF;}
+#active a{
+	color:#FFF;}
+.innerrightside{
+	width:714px;
+	float:right;}
+.innerrightside h2{
+	color:#064e90;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:20px;
+	font-weight:lighter;
+	margin-left:20px;}
+.line{
+	background:url(http://primebee.com/images/innerpageline.png) repeat-x;
+	height:2px;
+	width:650px;
+	margin-left:20px;}
+.line2{
+	background:url(http://primebee.com/images/innerpageline.png) repeat-x;
+	height:1px;
+	width:650px;
+	margin-left:20px;}
+	
+.innerlogo{
+	background:url(http://primebee.com/images/innerlogo.png);
+	width:169px;
+	height:37px;
+	display:block;
+	margin-top:38px;
+	margin-bottom:15px;
+	float:left;}
+.innerbg{
+	background:url(http://primebee.com/images/innerbg.png) repeat-y;
+	min-height:850px}
+.innerhead{
+	background:url(http://primebee.com/images/head.png) repeat-x;
+	height:51px;
+	width:711px;
+	float:right;
+	margin-top:40px;
+	margin-right:10px;}
+.innerheader{
+	float:right;
+	margin-top:0px;}
+.imgspan{
+	margin:10px 0 0 0;
+	padding:15px 0 0 0;
+}
+.innertable{
+	margin-left:20px;}
+.innertableleft{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:12px;
+	color:#000;
+	}
+.innertableright{
+	padding-left:20px;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:12px;
+	color:#000;}
+.innertable td{
+	padding-bottom:15px;
+	}
+.button{
+	margin-left:20px;}
+.bttnstyle{
+	border:0px;
+	background:url(http://primebee.com/images/bttnstyle.png);
+	color:#fff;
+	padding:10px;
+	cursor:pointer;
+	-webkit-border-radius: 3px;
+    border-radius: 3px;}
+.questionarea{
+	width:600px;
+	margin-left:90px;
+	position:relative;}
+.question{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:12px;
+	color:#000;
+	line-height:18px;}
+.questionbullet{
+	background:url(http://primebee.com/images/question.png);
+	width:23px;
+	height:24px;
+	display:block;
+	position:absolute;
+	left:-40px;
+	top:-17px;}
+.questionbg{
+	background:#f5f5f5;
+	height:200px;
+	width:711px;
+	padding-top:10px;
+	padding-left:5px;
+	margin:-15px 0 -15px -7px;
+	}
+.socialquestionarea{
+	width:650px;
+	margin-left:30px;
+	position:relative;}
+.socialtable{
+	margin:0 0 0 20px;}
+.socialtable td{
+	margin-bottom:15px;
+	}
+.socialtableleft{
+	float:left;
+	width:250px;}
+.socialtableright{
+	float:right;
+	}
+.socialtableright ul{}
+.socialtableright li{
+	list-style:none;
+	float:left;
+	margin:-15px 0 0 0;
+	background:#f9f5f5;
+	padding:3px 5px 3px 3px;
+	-webkit-border-radius: 3px;
+border-radius: 3px;}
+.photoleft{
+	float:left;
+	width:243px;}
+.photoright{
+	float:right;
+	width:243px;}
+.facebookbutton{
+	background:url(http://primebee.com/images/facebookbutton.png);
+	width:114px;
+	height:27px;
+	display:block;
+	cursor:pointer;
+	border:0px;}
+.or{
+	background:url(http://primebee.com/images/or.png);
+	width:21px;
+	height:56px;
+	float:left;
+	margin:10px 0 0 40px;}
+.valuebox{
+	width:300px;
+	border:1px solid #52b3ff;
+	height:270px;
+	-webkit-border-radius: 5px;
+     border-radius: 5px;
+	 float:left;
+	 margin:0 22px 20px 0;}
+.valueheading{
+	background:#52b3ff;
+	color:#ffffff;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:14px;
+	margin:0 0 0 0;
+	padding:5px 0 5px 10px;
+}
+.valuequestion{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:12px;
+	width:280px;
+	margin:10px 0 0 10px;}
+.valueoption{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:12px;
+	width:280px;
+	margin:10px 0 0 10px;}
+.valueoption ul{
+	margin:0px;
+	padding:0px;}
+.valueoption li{
+	list-style:none;
+	margin-bottom:10px;}
+	
+/*--Profilepage--*/
+.profilepic{
+	background:url(http://primebee.com/images/profilepic.png);
+	width:204px;
+	height:159px;
+	display:block;
+	margin:17px 0 17px 17px;
+	}
+.link{
+	float:right;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:12px;
+	margin:-30px 33px 0 0;}
+.link ul{}
+.link li{
+	float:left;
+	list-style:none;
+	margin-right:10px;}
+.link li a{
+	text-decoration:none;
+	color:#52b3ff;}
+.link li a:hover{
+	color:#064f90;}
+#simple{}
+#simple ul{
+	}
+#simple li{
+	background:none;
+	font-size:12px;
+	margin-bottom:-12px;}
+#simple li a:hover{
+	color:#52b3ff;}
+/*...................................... About Primebee page start from here..............................*/
+.about_main{
+	background:url(http://primebee.com/images/about_bg.png) no-repeat bottom center #ffffff;
+	width:852px;
+	min-height:764px;
+	display:block;
+	margin:25px 0 0 0;
+	padding:0 50px;
+	-webkit-box-shadow: 0px 0px 5px 1px #e4e5e9;
+    box-shadow: 0px 0px 5px 1px #e4e5e9;
+	position:relative;
+	}
+	.about_main h1{
+	margin:0;
+	padding:47px 0 0 0;
+	display:block;
+	clear:both;
+	font:bold 46px/46px 'Magra', sans-serif;
+	color:#064f90;
+	}
+	.about_main p{
+	margin:0;
+	padding:24px 0 0 0;
+	display:block;
+	clear:both;
+	font:normal 16px/18px 'Imprima', sans-serif;
+	color:#000;
+	}
+	.about_main_shadow{
+	width:952px;
+	height:27px;
+	background:url(http://primebee.com/images/shadow_bot.png) no-repeat center top;
+	position:absolute;
+	bottom:-27px;
+	left:0;
+	}
+/*...................................... About Primebee page End from here..............................*/
+
+/*...................................... Why Primebee page start from here..............................*/
+.why_primebee{
+	background:url(http://primebee.com/images/lady_bg.jpg) no-repeat bottom right #ffffff;
+	width:852px;
+	min-height:794px;
+	display:block;
+	margin:25px 0 0 0;
+	padding:0 50px;
+	-webkit-box-shadow: 0px 0px 5px 1px #e4e5e9;
+    box-shadow: 0px 0px 5px 1px #e4e5e9;
+	position:relative;
+	}
+	.why_primebee h1{
+	margin:0;
+	padding:47px 0 0 0;
+	display:block;
+	clear:both;
+	font:bold 46px/46px 'Magra', sans-serif;
+	color:#064f90;
+	}
+	.why_primebee h2{
+	width:448px;
+	text-align:justify;
+	margin:0;
+	padding:35px 0 0 0;
+	display:block;
+	clear:both;
+	font:bold 21px/22px 'Magra', sans-serif;
+	color:#064f90;
+	}
+	.why_primebee p{
+	width:448px;
+	text-align:justify;
+	margin:0;
+	padding:24px 0 0 0;
+	display:block;
+	clear:both;
+	font:normal 16px/18px 'Imprima', sans-serif;
+	color:#000;
+	}
+/*...................................... Why Primebee page End here..............................*/
+
+
