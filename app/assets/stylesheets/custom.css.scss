@@ -1,76 +1,120 @@
+$darkblue: #064f90;
+$lightblue: #3f74c3;
+$white: #ffffff;
+$lightgray: #e7e7e7;
+$black: #000000;
+$borderblue: rgb(0, 153, 255); /*rgb(72, 179, 255);*/
+$bordergray: rgb(51, 51, 51);
+$beeblue: rgb(62, 176, 255);
+
+
 body{
 	padding:0px;
 	margin:0px;
 	background:url(http://primebee.com/images/bg.png);
 	}
 
-.head{
-	background:url(http://primebee.com/images/head.png) repeat-x;
-	height:51px;}
 .wrapper{
-	width:960px;
-	margin:auto;
-	position:relative;}
-.header{
-	margin:-60px 0 0 0;}
-.header p{
-	font-family: 'Magra', sans-serif;
-	font-weight:lighter;
-	font-size:20px;
-	color:#fff;
-	text-shadow: 1px 1px 0px #3f74c3;
-    filter: dropshadow(color=#3f74c3, offx=1, offy=1);
+  width:960px;
+  margin:auto;
+  position:relative;}
 
-	}
+/*......................................Header.........................................................*/
+
+.header{
+  background-color: $bordergray;
+  height: 49px;
+  border-bottom: 5px solid $borderblue;}
+
+.header_logo{
+  height: 44px;
+  width: 350px;
+  padding-top: 5px;}
 
 .socialmedia{
 	float:right;
-	margin:-55px 0 0 0}
+  margin:-49px 0 0 0;}
+
 a.login{
 	font-family:Verdana, Geneva, sans-serif;
 	font-size:12px;
-	color:#fff;
+	color:$white;
 	float:left;
 	text-decoration:none;
 	margin:15px 10px 0 0;}
+
 a.login:hover{
-	color:#064f90;}
+	color:$borderblue;}
+
 a.facebook{
 	background:url(http://primebee.com/images/facebook.png) 0 0;
-	height:50px;
+	height:49px;
 	width:49px;
 	display:block;
 	float:left;}
+
 a.facebook:hover{
-	background:url(http://primebee.com/images/facebook.png) 0px 50px;
-	}
+	background:url(http://primebee.com/images/facebook.png) 0 50px;}
+
 a.twitter{
 	background:url(http://primebee.com/images/twitter.png) 0 0;
-	height:50px;
+	height:49px;
 	width:49px;
 	float:left;
 	display:block;}
+
 a.twitter:hover{
 	background:url(http://primebee.com/images/twitter.png) 0 49px;}
+
 .googleplus{
 	margin:11px 0 0 5px;
 	float:left;
 	width:111px;}
-.logo{
-	background:url(http://primebee.com/images/innerlogo.png);
-	width:169px;
-	height:37px;
-	display:block;
-	margin:35px 0 0 0;}
+
+/*......................................Footer.........................................................*/
+
+.footer{
+  background-color: $bordergray;
+  height:49px;
+  margin:50px 0 0 0;
+  border-top: 5px solid $borderblue;}
+
+.footerleft{
+  margin:17px 0 0 0;
+  float:left;
+  color:$white;
+  font-family:Verdana, Geneva, sans-serif;
+  font-size:12px;}
+
+.footerright{
+  margin:5px 0 0 0;
+  float:right;
+  color:$white;
+  font-family:Verdana, Geneva, sans-serif;
+  font-size:12px;}
+  .footerright ul {
+    list-style-type:none;}
+  .footerright li{
+    float:left;
+    margin-left:5px;}
+  .footerright li a{
+    color:$white;
+    text-decoration:none;}
+  .footerright li a:hover{
+    color:$borderblue;
+    text-decoration:bold;}
+
+/*......................................Home.........................................................*/
 .mainbg{
 	background:url(http://primebee.com/images/mainbg.png);
 	width:952px;
 	height:740px;
 	display:block;
 	margin:25px 0 0 0;
-	-webkit-box-shadow: 0px 0px 5px 1px #e4e5e9;
-    box-shadow: 0px 0px 5px 1px #e4e5e9;
+	-webkit-box-shadow: 0px 0px 5px 1px $lightgray;
+    box-shadow: 0px 0px 5px 1px $lightgray;
 	}
+
 .ribbon{
 	background:url(http://primebee.com/images/ribbon.png);
 	width:252px;
@@ -79,43 +123,49 @@ a.twitter:hover{
 	top:21px;
 	left:-16px;
 	display:block;}
+
 .ribbontext{
 	font-family: 'Magra', sans-serif;
 	font-weight:lighter;
 	font-size:20px;
-	color:#fff;
+	color:$white;
 	margin:24px 0 0 50px;
-	text-shadow: 1px 1px 0px #3f74c3;
-    filter: dropshadow(color=#3f74c3, offx=1, offy=1);
+	text-shadow: 1px 1px 0px $lightblue;
+    filter: dropshadow(color=$lightblue, offx=1, offy=1);}
 
-	}
 .innertableright{
   padding-left:20px;
   font-family:Verdana, Geneva, sans-serif;
   font-size:12px;
-  color:#000;}
+  color:$black;}
+
 .leftform{
 	float:left;
 	margin:90px 0 0 20px;}
+
 .tableleft{
 	font-family:Verdana, Geneva, sans-serif;
 	font-size:12px;
-	color:#000;
+	color:$black;
 	text-align:right;}
+
 .tableright{
 	padding-left:20px;
 	font-family:Verdana, Geneva, sans-serif;
 	font-size:12px;
-	color:#000;}
+	color:$black;}
+
 .note{
 	font-style:italic;
 	color:#03aeee;
     }
-.textbox{
-	background:#f7f7f7;
-	border:1px solid #e3e3e3;
-	width:269px;
-	height:28px;}
+
+  .textbox{
+  background:#f7f7f7;
+  border:1px solid #e3e3e3;
+  width:269px;
+  height:28px;}
+
 .selectbox{
 	border:1px solid #e3e3e3;
 	width:272px;
@@ -132,6 +182,7 @@ a.twitter:hover{
     appearance:none;
     cursor:pointer;
 	}
+
 .selectbox2{
 	border:1px solid #e3e3e3;
 	width:80px;
@@ -148,6 +199,7 @@ a.twitter:hover{
     appearance:none;
     cursor:pointer;
 	}
+
 .signupbttn{
 	background:url(http://primebee.com/images/signup.png);
 	width:97px;
@@ -161,22 +213,22 @@ a.twitter:hover{
 .rightside{
 	width:433px;
 	float:right;
-	margin-right:30px;
-	}
+	margin-right:30px;}
+
 .rightside h1{
-	color:#064f90;
+	color: $darkblue;
 	font-family: 'Magra', sans-serif;
 	font-size:46px;
-	text-shadow: 1px 1px 0px #ffffff;
-filter: dropshadow(color=#ffffff, offx=1, offy=1);
-margin-bottom:10px;
+	text-shadow: 1px 1px 0px $white;
+  filter: dropshadow(color=$white, offx=1, offy=1);
+  margin-bottom:10px;}
 
-}
 .rightside p{
 	font-family: 'Imprima', sans-serif;
-	color:#000;
+	color:$black;
 	font-size:16px;
 	line-height:22px;}
+
 .rightgirl{
 	background:url(http://primebee.com/images/girl.png);
 	width:359px;
@@ -184,114 +236,75 @@ margin-bottom:10px;
 	display:block;
 	margin:0 0 0 15px;}
 	
-.footer{
-	background:url(http://primebee.com/images/footer.png) repeat-x;
-	height:70px;
-	margin:50px 0 0 0;}
-.footerleft{
-	margin:30px 0 0 0;
-	float:left;
-	color:#fff;
-	font-family:Verdana, Geneva, sans-serif;
-	font-size:12px;}
-.footerright{
-	margin:20px 0 0 0;
-	float:right;
-	color:#fff;
-	font-family:Verdana, Geneva, sans-serif;
-	font-size:12px;
-	}
-.footerright ul{
-	list-style-type:none;}
-.footerright li{
-	float:left;
-	margin-left:5px;}
-.footerright li a{
-	color:#fff;
-	text-decoration:none;}
-.footerright li a:hover{
-	color:#e4e5e9;}
-.clear{
-	clear:both;}
+
 	
-/*...................................... About Primebee page start from here..............................*/
+/*......................................About PrimeBee.........................................................*/
 .about_main{
-	background:url(http://primebee.com/images/about_bg.png) no-repeat bottom center #ffffff;
-	width:852px;
+	background:url(http://primebee.com/images/about_bg.png) no-repeat bottom center $white;
+	width:850px;
 	min-height:764px;
 	display:block;
 	margin:25px 0 0 0;
 	padding:0 50px;
-	-webkit-box-shadow: 0px 0px 5px 1px #e4e5e9;
-    box-shadow: 0px 0px 5px 1px #e4e5e9;
-	position:relative;
-	}
-	.about_main h1{
-	margin:0;
-	padding:47px 0 0 0;
-	display:block;
-	clear:both;
-	font:bold 46px/46px 'Magra', sans-serif;
-	color:#064f90;
-	}
-	.about_main p{
-	margin:0;
-	padding:24px 0 0 0;
-	display:block;
-	clear:both;
-	font:normal 16px/18px 'Imprima', sans-serif;
-	color:#000;
-	}
+	-webkit-box-shadow: 0px 0px 5px 1px $lightgray;
+    box-shadow: 0px 0px 5px 1px $lightgray;
+	position:relative;}
+  .about_main h1{
+  	margin:0;
+  	padding:47px 0 0 0;
+  	display:block;
+  	clear:both;
+  	font:bold 46px/46px 'Magra', sans-serif;
+  	color:$darkblue;}
+  .about_main p{
+  	margin:0;
+  	padding:24px 0 0 0;
+  	display:block;
+  	clear:both;
+  	font:normal 16px/18px 'Imprima', sans-serif;
+  	color:$black;}
+
 	.about_main_shadow{
 	width:952px;
 	height:27px;
 	background:url(http://primebee.com/images/shadow_bot.png) no-repeat center top;
 	position:absolute;
 	bottom:-27px;
-	left:0;
-	}
-/*...................................... About Primebee page End from here..............................*/
+	left:0;}
 
-/*...................................... Why Primebee page start from here..............................*/
+/*......................................Why PrimeBee..........................................................*/
 .why_primebee{
-	background:url(http://primebee.com/images/lady_bg.jpg) no-repeat bottom right #ffffff;
+	background:url(http://primebee.com/images/lady_bg.jpg) no-repeat bottom right $white;
 	width:852px;
 	min-height:794px;
 	display:block;
 	margin:25px 0 0 0;
 	padding:0 50px;
-	-webkit-box-shadow: 0px 0px 5px 1px #e4e5e9;
-    box-shadow: 0px 0px 5px 1px #e4e5e9;
-	position:relative;
-	}
-	.why_primebee h1{
-	margin:0;
-	padding:47px 0 0 0;
-	display:block;
-	clear:both;
-	font:bold 46px/46px 'Magra', sans-serif;
-	color:#064f90;
-	}
-	.why_primebee h2{
-	width:448px;
-	text-align:justify;
-	margin:0;
-	padding:35px 0 0 0;
-	display:block;
-	clear:both;
-	font:bold 21px/22px 'Magra', sans-serif;
-	color:#064f90;
-	}
-	.why_primebee p{
-	width:448px;
-	text-align:justify;
-	margin:0;
-	padding:24px 0 0 0;
-	display:block;
-	clear:both;
-	font:normal 16px/18px 'Imprima', sans-serif;
-	color:#000;
-	}
-/*...................................... Why Primebee page End here..............................*/
-
-
+	-webkit-box-shadow: 0px 0px 5px 1px $lightgray;
+    box-shadow: 0px 0px 5px 1px $lightgray;
+	position:relative;}
+  .why_primebee h1{
+  	margin:0;
+  	padding:47px 0 0 0;
+  	display:block;
+  	clear:both;
+  	font:bold 46px/46px 'Magra', sans-serif;
+  	color:$darkblue}
+  .why_primebee h2{
+  	width:448px;
+  	text-align:justify;
+  	margin:0;
+  	padding:35px 0 0 0;
+  	display:block;
+  	clear:both;
+  	font:bold 21px/22px 'Magra', sans-serif;
+  	color:$darkblue}
+  .why_primebee p{
+  	width:448px;
+  	text-align:justify;
+  	margin:0;
+  	padding:24px 0 0 0;
+  	display:block;
+  	clear:both;
+  	font:normal 16px/18px 'Imprima', sans-serif;
+  	color:$black;}
